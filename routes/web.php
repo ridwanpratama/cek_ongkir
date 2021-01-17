@@ -17,4 +17,5 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', 'getApi@Index');
+Route::get('/', 'getApiRajaOngkirController@index');
+Route::get('/getCity/ajax/{id}', 'getApiRajaOngkirController@getCitiesAjax');
